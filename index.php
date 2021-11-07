@@ -1,5 +1,6 @@
 <?php
-$url = isset($_GET['url']) == true ? $_GET['url'] : "/";
+// $url = isset($_GET['url']) ? $_GET['url'] : "/";
+    $url = '/member';
 // echo $url;
 
 // require_once './app/controllers/HomeController.php';
@@ -10,11 +11,13 @@ require_once './commons/db.php';
 use App\Controllers\HomeController;
 use App\Controllers\ProductController;
 use App\Controllers\CategoryController;
+use App\Controllers\MemberController;
 
 
     switch($url){
         case '/':
             $ctr = new HomeController();
+            echo $url;
             echo $ctr->index();
             break;
         case 'detail':
@@ -33,7 +36,11 @@ use App\Controllers\CategoryController;
             $ctr = new CategoryController();
             echo $ctr->deletedata();
             break;
-            
+        case '/member':
+            $ctr = new MemberController();
+            echo $ctr->index();
+            break;
+
         default:
             echo "404 not found";
             break;
