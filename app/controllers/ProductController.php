@@ -7,7 +7,7 @@ class ProductController{
         // return "Trang chu website";
         $products = Product::all();
         $categorys = Category::all();
-        include_once './app/views/detail-product.php';
+        include_once './app/views/customer/products-list.php';
     }
 
     //index cho trang admin 

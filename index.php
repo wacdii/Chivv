@@ -20,6 +20,14 @@ use App\Controllers\MemberController;
             echo $url;
             echo $ctr->index();
             break;
+        case 'contacts':
+            $ctr = new HomeController();
+            echo $ctr->contacts();
+            break;
+        case 'products':
+            $ctr = new ProductController();
+            echo $ctr->index();
+            break;
         case 'detail':
             $ctr = new ProductController();
             echo $ctr->index();
