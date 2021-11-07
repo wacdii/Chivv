@@ -17,6 +17,14 @@ use App\Controllers\CategoryController;
             $ctr = new HomeController();
             echo $ctr->index();
             break;
+        case 'contacts':
+            $ctr = new HomeController();
+            echo $ctr->contacts();
+            break;
+        case 'products':
+            $ctr = new ProductController();
+            echo $ctr->index();
+            break;
         case 'detail':
             $ctr = new ProductController();
             echo $ctr->index();

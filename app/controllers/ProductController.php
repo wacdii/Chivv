@@ -7,7 +7,7 @@ class ProductController{
         // return "Trang chu website";
         $products = Product::all();
         $categorys = Category::all();
-        include_once './app/views/detail-product.php';
+        include_once './app/views/customer/products-list.php';
     }
     public function detail(){
         return "TRang chi tiet";
