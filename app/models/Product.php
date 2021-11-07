@@ -8,6 +8,9 @@ class Product extends Model{
     public $incrementing = false; 
     protected $ketType ='string';
     public $timestamps = false;
+
+    // new 
+    protected $fillable = ['product_id', 'product_name', 'product_price', 'product_describe'];
 }
     
 ?>
