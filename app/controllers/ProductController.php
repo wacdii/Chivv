@@ -9,6 +9,12 @@ class ProductController{
         $categorys = Category::all();
         include_once './app/views/detail-product.php';
     }
+
+    //index cho trang admin 
+    public function index_admin(){
+        $products = Product::all();
+        include_once './app/views/adminPage/product.php';
+    }
     public function detail(){
         return "TRang chi tiet";
     }
