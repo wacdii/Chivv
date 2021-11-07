@@ -1,6 +1,4 @@
-<?php $this->layout("layouts/admin") ?>
 
-<?php $this->start("page") ?>
     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
             <tr>
@@ -21,4 +19,3 @@
             <?php endforeach ?>
         </tbody>
     </table>
-<?php $this->stop() ?>
